@@ -1,4 +1,4 @@
-In this tutorial project, I used currency converter api from https://manage.exchangeratesapi.io/ .
+In this React tutorial project, I used currency converter api from https://manage.exchangeratesapi.io/ .
 
 --------------------------------------------------
 # Getting Started with Create React App
