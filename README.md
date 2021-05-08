@@ -1,3 +1,6 @@
+In this tutorial project, I used currency converter api from https://manage.exchangeratesapi.io/ .
+
+--------------------------------------------------
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
