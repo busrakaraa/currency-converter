@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import CurrencyRow from './CurrencyRow';
 
+
 const BASE_URL = 'http://api.exchangeratesapi.io/v1/latest?access_key=57c0a2a7b77f205b4356726d44dc208e'
 
 function App() {
@@ -34,14 +35,14 @@ function App() {
   })
 }, [])
 
+
 useEffect(() => {
   if (fromCurrency != null && toCurrency != null) {
-    fetch(`${BASE_URL}?base=${fromCurrency}&symbols=${toCurrency}`)
+    fetch("http://api.exchangeratesapi.io/v1/latest?access_key=57c0a2a7b77f205b4356726d44dc208e")
     .then(res => res.json())
     .then(data => setExchangeRate(data.rates[toCurrency]))
   }
 }, [fromCurrency, toCurrency]) 
- 
 
 
   function handleFromAmountChange(e) {
@@ -55,6 +56,7 @@ useEffect(() => {
   }
 
   return (
+ // <div style={{ backgroundImage: "url(/img/background.jpg)"}}>
    <>
     <h1>Converter</h1>
     <CurrencyRow
@@ -73,7 +75,11 @@ useEffect(() => {
     amount = {toAmount}
     />
     </>
+
+   // </div>
   );
+
+
 }
 
 export default App;
